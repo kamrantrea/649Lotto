@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Play Lotto</title>
+
+    <link href="KTreaLotto.css" rel="stylesheet" />
+    <script src="KTreaLotto.js"></script>
+
+</head>
+
+<body>
+    <table id="mainTable">
+        <tbody>
+            <tr>
+                <td>
+                    <fieldset>
+                        <legend><span class="legendStyle">PICK YOUR PLAY</span></legend>
+                        <h3>Pick 6 numbers from 1 to 49 or let the computer pick it for you. Select the number of times you want
+                            to play(1,2 or 3); Then click PLAY LOTTO to try your luck!</h3>
+
+                        <div class="textCenter colorBlack">
+                            <h2>Pick the numbers for you?</h2>
+                            <input type="radio" name="yesNoRadioGroup" id="yesRadio" value="Yes" /> <label>Yes</label>
+                            <input type="radio" name="yesNoRadioGroup" id="noRadio" value="No" checked="checked" /> <label>No</label>
+
+
+                            <h2><span>How many plays?</span>
+                                <select id="numOfPlays">
+                                <option>1</option><option>2</option><option>3</option>
+                            </select>
+                            </h2>
+
+                            <fieldset>
+                                <legend>649 Numbers</legend>
+
+                                <table id="lottoNumberTable">
+                                    <tr>
+                                        <td><input type="checkbox" name="chooseNumbers[]" value="1" /> <label> 1 </label></td>
+                                        <td><input type="checkbox" name="chooseNumbers[]" value="11" /> <label> 11 </label></td>
+                                        <td><input type="checkbox" name="chooseNumbers[]" value="21" /> <label> 21 </label></td>
+                                        <td><input type="checkbox" name="chooseNumbers[]" value="31" /> <label> 31 </label></td>
+                                        <td><input type="checkbox" name="chooseNumbers[]" value="41" /> <label> 41 </label></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" name="chooseNumbers[]" value="2" /> <label> 2 </label></td>
+                                        <td><input type="checkbox" name="chooseNumbers[]" value="12" /> <label> 12 </label></td>
+                                        <td><input type="checkbox" name="chooseNumbers[]" value="22" /> <label> 22 </label></td>
+                                        <td><input type="checkbox" name="chooseNumbers[]" value="32" /> <label> 32 </label></td>
+                                        <td><input type="checkbox" name="chooseNumbers[]" value="42" /> <label> 42 </label></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" name="chooseNumbers[]" value="3" /> <label> 3 </label></td>
+                                        <td><input type="checkbox" name="chooseNumbers[]" value="13" /> <label> 13 </label></td>
+                                        <td><input type="checkbox" name="chooseNumbers[]" value="23" /> <label> 23 </label></td>
+                                        <td><input type="checkbox" name="chooseNumbers[]" value="33" /> <label> 33 </label></td>
+                                        <td><input type="checkbox" name="chooseNumbers[]" value="43" /> <label> 43 </label></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" name="chooseNumbers[]" value="4" /> <label> 4 </label></td>
+                                        <td><input type="checkbox" name="chooseNumbers[]" value="14" /> <label> 14 </label></td>
+                                        <td><input type="checkbox" name="chooseNumbers[]" value="24" /> <label> 24 </label></td>
+                                        <td><input type="checkbox" name="chooseNumbers[]" value="34" /> <label> 34 </label></td>
+                                        <td><input type="checkbox" name="chooseNumbers[]" value="44" /> <label> 44 </label></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" name="chooseNumbers[]" value="5" /> <label> 5 </label></td>
+                                        <td><input type="checkbox" name="chooseNumbers[]" value="15" /> <label> 15 </label></td>
+                                        <td><input type="checkbox" name="chooseNumbers[]" value="25" /> <label> 25 </label></td>
+                                        <td><input type="checkbox" name="chooseNumbers[]" value="35" /> <label> 35 </label></td>
+                                        <td><input type="checkbox" name="chooseNumbers[]" value="45" /> <label> 45 </label></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" name="chooseNumbers[]" value="6" /> <label> 6 </label></td>
+                                        <td><input type="checkbox" name="chooseNumbers[]" value="16" /> <label> 16 </label></td>
+                                        <td><input type="checkbox" name="chooseNumbers[]" value="26" /> <label> 26 </label></td>
+                                        <td><input type="checkbox" name="chooseNumbers[]" value="36" /> <label> 36 </label></td>
+                                        <td><input type="checkbox" name="chooseNumbers[]" value="46" /> <label> 46 </label></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" name="chooseNumbers[]" value="7" /> <label> 7 </label></td>
+                                        <td><input type="checkbox" name="chooseNumbers[]" value="17" /> <label> 17 </label></td>
+                                        <td><input type="checkbox" name="chooseNumbers[]" value="27" /> <label> 27 </label></td>
+                                        <td><input type="checkbox" name="chooseNumbers[]" value="37" /> <label> 37 </label></td>
+                                        <td><input type="checkbox" name="chooseNumbers[]" value="47" /> <label> 47 </label></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" name="chooseNumbers[]" value="8" /> <label> 8 </label></td>
+                                        <td><input type="checkbox" name="chooseNumbers[]" value="18" /> <label> 18 </label></td>
+                                        <td><input type="checkbox" name="chooseNumbers[]" value="28" /> <label> 28 </label></td>
+                                        <td><input type="checkbox" name="chooseNumbers[]" value="38" /> <label> 38 </label></td>
+                                        <td><input type="checkbox" name="chooseNumbers[]" value="48" /> <label> 48 </label></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" name="chooseNumbers[]" value="9" /> <label> 9 </label></td>
+                                        <td><input type="checkbox" name="chooseNumbers[]" value="19" /> <label> 19 </label></td>
+                                        <td><input type="checkbox" name="chooseNumbers[]" value="29" /> <label> 29 </label></td>
+                                        <td><input type="checkbox" name="chooseNumbers[]" value="39" /> <label> 39 </label></td>
+                                        <td><input type="checkbox" name="chooseNumbers[]" value="49" /> <label> 49 </label></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" name="chooseNumbers[]" value="10" /> <label> 10 </label></td>
+                                        <td><input type="checkbox" name="chooseNumbers[]" value="20" /> <label> 20 </label></td>
+                                        <td><input type="checkbox" name="chooseNumbers[]" value="30" /> <label> 30 </label></td>
+                                        <td><input type="checkbox" name="chooseNumbers[]" value="30" /> <label> 40 </label></td>
+
+                                    </tr>
+                                </table>
+
+                            </fieldset>
+
+                            <button class="btnCss" id="buttonPlay">PLAY LOTTO</button>
+
+                        </div>
+                    </fieldset>
+                </td>
+                <td>
+                    <fieldset>
+                        <legend><span class="legendStyle">RESULT OF PLAYS</span></legend>
+
+                        <p id="statusMessage"> </p>
+
+                        <div id="dynamicUserDiv">
+
+                        </div>
+                        <div id="dynamicPlayDiv">
+
+                        </div>
+
+                    </fieldset>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
